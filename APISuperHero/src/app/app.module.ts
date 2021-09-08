@@ -7,13 +7,13 @@ import { AppComponent } from './app.component';
 // Import the module from the SDK
 import { AuthModule } from '@auth0/auth0-angular';
 import { PrivateComponent } from './components/private/private.component';
-import { VistasComponent } from './components/vistas/vistas.component';
+import { SuperheroeComponent } from './vistas/superheroe/superheroe.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PrivateComponent,
-    VistasComponent
+    SuperheroeComponent
   ],
   imports: [
     BrowserModule,
