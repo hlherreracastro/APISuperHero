@@ -1,19 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 // Import the module from the SDK
 import { AuthModule } from '@auth0/auth0-angular';
 import { PrivateComponent } from './components/private/private.component';
-import { SuperheroeComponent } from './vistas/superheroe/superheroe.component';
+//import { SuperheroeComponent } from './vistas/superheroe/superheroe.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PrivateComponent,
-    SuperheroeComponent
+    routingComponents
+    //SuperheroeComponent
   ],
   imports: [
     BrowserModule,
