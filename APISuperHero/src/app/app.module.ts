@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 // Import the module from the SDK
 import { AuthModule } from '@auth0/auth0-angular';
 import { PrivateComponent } from './components/private/private.component';
-import { ConexionesFamiliaComponent } from './vistas/conexiones-familia/conexiones-familia.component';
+//import { ConexionesFamiliaComponent } from './vistas/conexiones-familia/conexiones-familia.component';
 //import { NivelPoderComponent } from './vistas/nivel-poder/nivel-poder.component';
 //import { SuperheroeComponent } from './vistas/superheroe/superheroe.component';
 
@@ -16,7 +16,7 @@ import { ConexionesFamiliaComponent } from './vistas/conexiones-familia/conexion
     AppComponent,
     PrivateComponent,
     routingComponents,
-    ConexionesFamiliaComponent
+    //ConexionesFamiliaComponent
     //NivelPoderComponent,
     //SuperheroeComponent
   ],
