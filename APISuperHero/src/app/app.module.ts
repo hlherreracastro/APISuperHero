@@ -16,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     PrivateComponent,
     routingComponents,
-
+    //ConexionesFamiliaComponent,
+    //NivelPoderComponent,
     //SuperheroeComponent
   ],
   imports: [
