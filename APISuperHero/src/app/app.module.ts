@@ -9,6 +9,7 @@ import { AuthModule } from '@auth0/auth0-angular';
 import { PrivateComponent } from './components/private/private.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+//import { BiografiaComponent } from './vistas/biografia/biografia.component';
 //import { SuperheroeComponent } from './vistas/superheroe/superheroe.component';
 
 @NgModule({
@@ -16,6 +17,7 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     PrivateComponent,
     routingComponents,
+    //BiografiaComponent,
     //ConexionesFamiliaComponent,
     //NivelPoderComponent,
     //SuperheroeComponent

@@ -7,12 +7,14 @@ import { SuperheroeComponent } from './vistas/superheroe/superheroe.component';
 import { NivelPoderComponent } from './vistas/nivel-poder/nivel-poder.component';
 import { ApiService } from './servicios/api/api.service'
 import { ConexionesFamiliaComponent } from './vistas/conexiones-familia/conexiones-familia.component';
+import { BiografiaComponent } from './vistas/biografia/biografia.component';
 
 const routes: Routes = [
   { path: 'private', component: PrivateComponent, canActivate: [ AuthGuard ] },
   { path: 'superheroe' , component:SuperheroeComponent },
   { path: 'nivel-poder' , component:NivelPoderComponent },
   { path: 'conexiones-familia' , component:ConexionesFamiliaComponent },
+  { path: 'biografia' , component:BiografiaComponent },
   { path: 'api' , component:ApiService },
 ];
 
@@ -21,4 +23,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [SuperheroeComponent, NivelPoderComponent, ConexionesFamiliaComponent]
+export const routingComponents = [SuperheroeComponent, NivelPoderComponent, ConexionesFamiliaComponent, BiografiaComponent]
