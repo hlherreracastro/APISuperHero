@@ -7,18 +7,23 @@ import { AppComponent } from './app.component';
 // Import the module from the SDK
 import { AuthModule } from '@auth0/auth0-angular';
 import { PrivateComponent } from './components/private/private.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 //import { SuperheroeComponent } from './vistas/superheroe/superheroe.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PrivateComponent,
-    routingComponents
+    routingComponents,
+
     //SuperheroeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
     AuthModule.forRoot({
       domain: 'dev-dglcyv8y.us.auth0.com',
       clientId: 'VpgR6EKZKrt39nrPVd3IkMvUTGa4UZBL',
