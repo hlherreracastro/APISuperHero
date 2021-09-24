@@ -9,9 +9,9 @@
         <li class="nav-item" routerLinkActive="active">
           <a class="nav-link" routerLink="superheroe" *ngIf="(auth.isAuthenticated$ | async)">Search</a>
         </li>
-        <li class="nav-item" routerLinkActive="active">
+        <!--li class="nav-item" routerLinkActive="active">
           <a class="nav-link" routerLink="private" *ngIf="(auth.isAuthenticated$ | async)">Session</a>
-        </li>
+        </li-->
       </ul>
     </div>
   </div>
@@ -30,39 +30,4 @@
       </div>
   </div>
 </div>
-
-<div class="container">
-  <br/>
-  <div class="row justify-content-center">
-    <div class="col-12 col-md-10 col-lg-8">
-        <form class="card card-sm">
-            <div class="card-body row no-gutters align-items-center">
-                <div class="col-auto">
-                    <i class="fas fa-search h4 text-body"></i>
-                </div>
-                <!--end of col-->
-                <div class="col">
-                    <input [(ngModel)]="hero" [ngModelOptions]="{standalone: true}" class="form-control form-control-lg form-control-borderless" type="text" placeholder="Search hero ID">
-                </div>
-                <!--end of col-->
-                <div class="col-auto">
-                    <button (click)="search()" class="btn btn-lg btn-success" type="submit">Search</button>
-                </div>
-                <!--end of col-->
-              </div>
-            </form>
-          </div>
-          <!--end of col-->
-          <div class="container">
-            <br>
-            <br>
-            <img src="{{heroIDImage}}" alt="Foto Hero">
-            <br>
-            <p>{{heroIDName}}</p>
-            <p>Intelligence: {{heroPIntell}}</p>
-
-          </div>
-</div>
-</div>
-
 <router-outlet></router-outlet>

@@ -1,4 +1,7 @@
+import { Hero } from './../../models/Hero';
+
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-superheroe',
@@ -7,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SuperheroeComponent implements OnInit {
 
-  constructor() { }
+  hero:string
 
-  ngOnInit(): void {
+  constructor(private router:Router){ }
+
+  ngOnInit(): void{
+  }
+
+  biography(hero:string){
+    console.log(this.hero)
+    this.router.navigate(['biografia',hero]);
   }
 
 }
+

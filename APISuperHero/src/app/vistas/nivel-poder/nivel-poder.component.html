@@ -2,36 +2,59 @@
 
     <p></p>
 
+    <div class="row">
+      <div class=" col-md-8 offset-md-0 mb-4">
+        <div class=" col-md-5 card border-0 shadow">
+            <img src="{{heroImage}}" class="card-img-top mx-auto d-block" alt="...">
+            <div class="card-body text-center">
+                <h5 class="card-title mb-0">{{heroName}}</h5>
+            </div>
+        </div>
+      </div>
+    </div>
     <table class="table table-sm table-dark">
         <thead>
           <tr>
-            <th scope="col">Ironman</th>
+            <th scope="col">{{heroName}}</th>
             <td> </td>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Inteligencia 
+            <td>Inteligencia
                 <br/>Fuerza
                 <br/>Velocidad
                 <br/>Durabilidad
                 <br/>Poder
                 <br/>Combate
             </td>
-            <td>95</td>
+            <td>{{heroIntelligence}}
+                <br/>{{heroStrength}}
+                <br/>{{heroSpeed}}
+                <br/>{{heroDurability}}
+                <br/>{{heroPower}}
+                <br/>{{heroCombat}}
+            </td>
           </tr>
           <tr>
-            <td>Género 
+            <td>Género
                 <br/>Raza
                 <br/>Altura
                 <br/>Peso
-                <br/>Color de ojos
-                <br/>Color de pelo
             </td>
-            <td>Masculino</td>
+            <td>{{heroGender}}
+              <br/>{{heroRace}}
+              <br/>{{heroHeight}}
+              <br/>{{heroWeight}}</td>
           </tr>
         </tbody>
       </table>
 
+      <div class="row">
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <button (click)="biografia()" type="submit" class="btn btn-primary" >Biografía</button>
+          <button (click)="conexiones()"type="button" class="btn btn-primary">Trabajo, Base y Familia</button>
+        </div>
+      </div>
 
 </div>

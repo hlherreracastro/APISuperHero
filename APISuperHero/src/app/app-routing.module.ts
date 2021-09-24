@@ -12,9 +12,9 @@ import { BiografiaComponent } from './vistas/biografia/biografia.component';
 const routes: Routes = [
   { path: 'private', component: PrivateComponent, canActivate: [ AuthGuard ] },
   { path: 'superheroe' , component:SuperheroeComponent },
-  { path: 'nivel-poder' , component:NivelPoderComponent },
-  { path: 'conexiones-familia' , component:ConexionesFamiliaComponent },
-  { path: 'biografia' , component:BiografiaComponent },
+  { path: 'nivel-poder/:hero' , component:NivelPoderComponent },
+  { path: 'conexiones-familia/:hero' , component:ConexionesFamiliaComponent },
+  { path: 'biografia/:hero' , component:BiografiaComponent },
   { path: 'api' , component:ApiService },
 ];
 

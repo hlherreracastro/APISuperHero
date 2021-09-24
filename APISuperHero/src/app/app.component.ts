@@ -25,13 +25,4 @@ export class AppComponent implements OnInit{
   logout(){
     this.auth.logout();
   }
-
-  search(){
-    this.apiService.getHero(this.hero).subscribe((data:any) => {
-      console.log(data)
-      this.heroIDImage = data.image.url
-      this.heroIDName = data.name
-      this.heroPIntell = data.powerstats.intelligence
-    })
-  }
 }
