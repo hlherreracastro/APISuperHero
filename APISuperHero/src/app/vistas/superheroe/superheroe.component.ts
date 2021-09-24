@@ -1,5 +1,3 @@
-import { Hero } from './../../models/Hero';
-
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
