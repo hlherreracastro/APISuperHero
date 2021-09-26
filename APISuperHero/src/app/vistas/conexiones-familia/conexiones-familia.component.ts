@@ -27,7 +27,7 @@ export class ConexionesFamiliaComponent implements OnInit {
       console.log(data)
       this.heroName = data.name
       this.heroImage = data.image.url
-      //this.heroGAffiliation = data.conections.group-affiliation
+      this.heroGAffiliation = data.connections["group-affiliation"]
       this.heroRelatives = data.connections.relatives
       this.heroWork = data.work.occupation
       this.heroBase = data.work.base

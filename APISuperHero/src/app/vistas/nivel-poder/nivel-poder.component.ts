@@ -49,8 +49,8 @@ export class NivelPoderComponent implements OnInit {
       this.heroRace = data.appearance.race
       this.heroHeight = data.appearance.height
       this.heroWeight = data.appearance.weight
-      //this.heroEyeColor = data.appearance.eye-color
-      //this.heroHairColor = data.appearance.hair-color
+      this.heroEyeColor = data.appearance["eye-color"]
+      this.heroHairColor = data.appearance["hair-color"]
     })
   }
 

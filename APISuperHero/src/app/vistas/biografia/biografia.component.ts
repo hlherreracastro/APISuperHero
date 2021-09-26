@@ -33,11 +33,11 @@ export class BiografiaComponent implements OnInit {
       console.log(data)
       this.heroImage = data.image.url
       this.heroName = data.name
-      //this.heroFullName = data.biography.full-name
-      //this.heroAlterEgo = data.biography.alter-egos
+      this.heroFullName = data.biography["full-name"]
+      this.heroAlterEgo = data.biography["alter-egos"]
       this.heroAliases = data.biography.aliases
-      //this.heroPBirth = data.biography.place-of-birth
-      //this.heroFAppearance= data.biography.first-appearance
+      this.heroPBirth = data.biography["place-of-birth"]
+      this.heroFAppearance= data.biography["first-appearance"]
       this.heroPublisher = data.biography.publisher
       this.heroAlignment = data.biography.alignment
     })

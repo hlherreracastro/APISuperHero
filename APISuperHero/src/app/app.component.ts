@@ -8,11 +8,7 @@ import { AuthService } from '@auth0/auth0-angular';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  title = 'APISuperHero';
-  hero:string
-  heroIDImage:string
-  heroIDName:string
-  heroPIntell:string
+  title = 'APISuperHero'
 
   constructor(private apiService:ApiService ,public auth: AuthService ){ }
 
